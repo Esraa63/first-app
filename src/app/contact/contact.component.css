@@ -1,0 +1,9 @@
+.labelContainer {
+  overflow: hidden;
+}
+label {
+  position: relative;
+}
+input:focus {
+  box-shadow: none;
+}

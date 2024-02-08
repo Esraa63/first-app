@@ -1,0 +1,94 @@
+<div class="row p-5">
+  <h1 class="text-center" style="color: #2c3e50">contact component</h1>
+  <div class="d-flex justify-content-center p-3">
+    <div class="line me-3" style="background-color: #2c3e50"></div>
+    <i class="fa-solid fa-star fa-lg" style="color: #2c3e50"></i>
+    <div class="line ms-3" style="background-color: #2c3e50"></div>
+  </div>
+
+  <div class="w-50 mx-auto">
+    <div class="formContainer">
+      <div class="labelContainer">
+        <label
+          for="userName"
+          class="form-label py-2"
+          style="color: #1abc9c"
+          [ngStyle]="{
+            top: inputName.length > 0 ? '10px' : '40px'
+          }"
+          >userName:</label
+        >
+      </div>
+      <input
+        type="text"
+        class="form-control border-0 border-bottom py-3"
+        (keyup)="onNameInput($event)"
+        placeholder="userName"
+      />
+    </div>
+
+    <div class="formContainer">
+      <div class="labelContainer">
+        <label
+          for="userAge"
+          class="form-label py-2"
+          style="color: #1abc9c"
+          [ngStyle]="{
+            top: inputAge.length > 0 ? '10px' : '40px'
+          }"
+          >userAge:</label
+        >
+      </div>
+      <input
+        type="text"
+        class="form-control border-0 border-bottom py-3"
+        (keyup)="onAgeInput($event)"
+        placeholder="userAge"
+      />
+    </div>
+
+    <div class="formContainer">
+      <div class="labelContainer">
+        <label
+          for="userEmail"
+          class="form-label py-2"
+          style="color: #1abc9c"
+          [ngStyle]="{
+            top: inputEmail.length > 0 ? '10px' : '40px'
+          }"
+          >userEmail:</label
+        >
+      </div>
+      <input
+        type="text"
+        class="form-control border-0 border-bottom py-3"
+        (keyup)="onEmailInput($event)"
+        placeholder="userEmail"
+      />
+    </div>
+
+    <div class="formContainer">
+      <div class="labelContainer">
+        <label
+          for="userPassword"
+          class="form-label py-2"
+          style="color: #1abc9c"
+          [ngStyle]="{
+            top: inputPassword.length > 0 ? '10px' : '40px'
+          }"
+          >userPassword:</label
+        >
+      </div>
+      <input
+        type="text"
+        class="form-control border-0 border-bottom py-3"
+        (keyup)="onPassInput($event)"
+        placeholder="userPassword"
+      />
+    </div>
+
+    <button class="btn mt-3 text-white" style="background-color: #1abc9c">
+      Send Message
+    </button>
+  </div>
+</div>

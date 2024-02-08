@@ -1,0 +1,9 @@
+.bgImg {
+  background-image: url("../../assets/background-1945183_1280.jpg");
+  background-position: center;
+  min-height: 80vh;
+  background-repeat: repeat;
+}
+.op {
+  background-color: rgba(0, 0, 0, 0.849);
+}
